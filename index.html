@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
 
     <header>
         <div class="logo">
             <ul>
                 <li><img class="pokeball" src="assets/pokeball.webp" alt=""></li>
-                <li><h1>Pokémon</h1></li>
+                <li>
+                    <h1>Pokémon</h1>
+                </li>
             </ul>
         </div>
         <div class="idioma">
@@ -25,21 +29,43 @@
     </header>
 
     <section>
-        <div class="botao">
-            <button type="search"></button>
+
+        <div class="search-box">
+            <input type="search" class="input-search-bar" name="searchbar"
+                placeholder="Pesquise um Pokémon por Nome, ID ou Espécie">
+            <a href="#" class="search-button">
+                <img class="search-icon" src="assets/search-icon.svg" alt="ícone de pesquisa">
+            </a>
         </div>
+
         <div class="container">
             <div class="card-pokemon">
-                <img src="" alt="">
-                <span class="id-pokemon"> 001 </span>
-                <span class="nome-pokemon"> Bulbassauro </span>
-                <span class="tipo-pokemon"> Grass </span>
-                <span class="tipo-pokemon"> Posion </span>
-                <span class="especie-pokemon"> Semente </span>
+                    <div class="image-pokemon">
+                        <img class="artwork-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="">
+                    </div>
+
+                    <div class="stats">
+                        <span class="id-and-name">
+                            <p class="id-pokemon"> 001 </p>
+                            <p class="name-pokemon"> Bulbassauro </p>
+                        </span>
+
+                        <span class="type-row">
+                            <p class="type-pokemon grass"> Grass </p>
+                            <p class="type-pokemon poison"> Poison </p>
+                        </span>
+
+                        <div class="specie">
+                        <span class="specie-title"> Espécie: </span>
+                        <span class="specie-pokemon"> Semente </span>
+                        </div>
+                    </div>
             </div>
         </div>
+
     </section>
 
 
 </body>
+
 </html>
